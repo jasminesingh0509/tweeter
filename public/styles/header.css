@@ -1,0 +1,13 @@
+#header {
+  background-color: #eb6e00;
+  height: 400px;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  padding: 1.5em;
+  text-align: center;
+}
+
+#header .header-content {
+  display: inline-block;
+}
