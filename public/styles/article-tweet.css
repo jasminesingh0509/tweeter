@@ -1,0 +1,15 @@
+.tweetContainer {
+  /* width: 100%;  */
+  /* background-color: #f4f1ec; */
+  border: solid;
+  margin-top: 5%;
+  padding: 3%;
+}
+
+.newTweetHeader {
+  margin-bottom: 14px;
+}
+
+article:hover {
+  box-shadow: gray 10px 10px 5px;
+}
