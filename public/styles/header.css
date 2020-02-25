@@ -1,11 +1,14 @@
 #header {
-  background-color: #eb6e00;
   height: 400px;
   width: 100%;
   z-index: 1;
   position: absolute;
   padding: 1.5em;
   text-align: center;
+  background-color: #eb6e00;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  
 }
 
 #header .header-content {
