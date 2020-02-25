@@ -1,10 +1,18 @@
-#navbar {
+.navbar {
   background-color: #4056A1;
   height: 120px;
   width: 100%;
-  z-index: 1;
-  /* padding: 1.5em; */
-  
-
+  z-index: 999;
+   padding: 1.5em; 
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+position: fixed;
+top: 0px;
 }
 
+#logo {
+  font-family: Bungee;
+  color:#FFFFFF;
+  padding: 1.5em; 
+}

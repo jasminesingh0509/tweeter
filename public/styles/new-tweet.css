@@ -1,0 +1,18 @@
+#textArea {
+  width: 100%; 
+  background-color: #f4f1ec;
+  border: none;
+  border-bottom: 4px black solid;
+}
+
+.tweetButton {
+  background-color: #4056A1;
+  font-family: bungee;
+  font-size: 24px;
+  color: white;
+}
+
+.counter {
+  float: right; 
+
+}
