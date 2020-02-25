@@ -3,16 +3,20 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400i,700&display=swap" rel="stylesheet">
+   
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400i,700&display=swap" rel="stylesheet">
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
     <!-- Nav CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -24,13 +28,27 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <div id="navbar">
-    <nav>
-      <div id="logo">
-      <span>tweeter</span>
+      <nav id="logo">
+        <span>tweeter</span>
+      </nav>
+      
+
+      <header id="header">
+
+        <div class="header-content">
+          <img src="/images/profile-hex.png"> 
+          <br>
+          <h2>Your Name</h2>
+        </div>
+
+      </header>
     </div>
-    </nav>
-  </div>
+
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container"> 
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+    </p>
+  </main>
   </body>
 </html>
