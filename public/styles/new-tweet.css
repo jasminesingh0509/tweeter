@@ -1,4 +1,4 @@
-#textArea {
+.textAreaTweet {
   width: 100%; 
   background-color: #f4f1ec;
   border: none;
@@ -6,6 +6,9 @@
   resize: none;
   overflow: hidden;
 }
+
+
+
 
 .tweetButton {
   background-color: #4056A1;
