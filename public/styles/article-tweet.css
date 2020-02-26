@@ -1,15 +1,32 @@
 .tweetContainer {
-  /* width: 100%;  */
-  /* background-color: #f4f1ec; */
   border: solid;
   margin-top: 5%;
   padding: 3%;
 }
 
-.newTweetHeader {
+.tweetContainer p {
+  float: right; 
+  margin-left: 4px; 
+}
+
+.tweetContainer header {
   margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between
+  
+}
+
+.handle {
+  opacity: 0;
+}
+
+.handle:hover {
+  opacity:1;
 }
 
 article:hover {
   box-shadow: gray 10px 10px 5px;
+  opacity: 1;
 }
+
+
