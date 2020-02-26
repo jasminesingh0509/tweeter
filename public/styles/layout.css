@@ -23,14 +23,10 @@ body {
 }
 
 
-
 main {
   width: 90%;
   background-color: #f4f1ec;
-  /* display: inline-block;
-  position: relative;
-  top: 400px; */
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 /*
