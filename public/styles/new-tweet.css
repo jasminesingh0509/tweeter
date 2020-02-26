@@ -4,6 +4,7 @@
   border: none;
   border-bottom: 4px black solid;
   resize: none;
+  overflow: hidden;
 }
 
 .tweetButton {
