@@ -1,5 +1,5 @@
 .textAreaTweet {
-  width: 100%; 
+  width: 100%;
   background-color: #f4f1ec;
   border: none;
   border-bottom: 4px black solid;
@@ -15,6 +15,14 @@
 }
 
 .counter {
-  float: right; 
+  float: right;
   font-family: bungee;
+}
+
+.new-tweet {
+  display: none;
+}
+
+#compose {
+  font-family: Source Sans Pro;
 }

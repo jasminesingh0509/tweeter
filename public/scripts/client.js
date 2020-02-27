@@ -51,6 +51,10 @@ $(document).ready(function() {
     }
   };
 
+  $("#compose").click(function() {
+    $(".new-tweet").slideToggle(500);
+  });
+
   //function below uses jQuery to add the article and database information to the HTML doc, do not use id
   const createTweetElement = function(tweet) {
     let $tweet = $(`<article class="tweetContainer">
@@ -63,15 +67,23 @@ $(document).ready(function() {
   </header>
   <div class="textAreaTweet">${tweet.content.text}</div>
   <footer>
-    <div>Date</div>
+    <div>${moment(tweet["created_at"]).fromNow()}</div>
   </footer>
 </article>`).addClass("tweet");
 
     return $tweet;
   };
 
+  const escape = function(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   // renderTweets(data);
 
+  //POST============================================================
+  //if text is empty, null or more than 140 characters
   $("form").submit(function(event) {
     let data = $(this).serialize();
     let textArea = $("#textArea").val().length;
@@ -85,12 +97,16 @@ $(document).ready(function() {
       $.ajax({
         type: "POST",
         url: "/tweets/",
-        data: data
-      }).then(res => console.log(res));
+        data: data,
+        success: function() {
+          loadTweets();
+        }
+      });
     }
   });
 
-  // Function to load tweets, if text is empty, null or more than 140 characters
+  //GET=================================================================
+  // Function to load tweets
   const loadTweets = function() {
     $.ajax({
       type: "GET",
