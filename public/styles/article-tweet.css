@@ -5,15 +5,14 @@
 }
 
 .tweetContainer p {
-  float: right; 
-  margin-left: 4px; 
+  float: right;
+  margin-left: 4px;
 }
 
 .tweetContainer header {
   margin-bottom: 14px;
   display: flex;
   justify-content: space-between
-  
 }
 
 .handle {
@@ -21,7 +20,7 @@
 }
 
 .handle:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 article:hover {
@@ -29,4 +28,10 @@ article:hover {
   opacity: 1;
 }
 
-
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+  height: 30px;
+}
