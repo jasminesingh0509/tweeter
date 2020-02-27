@@ -46,7 +46,7 @@ $(document).ready(function() {
     // include jQuery previous request
     for (let tweet of tweets) {
       let $tweet = createTweetElement(tweet);
-      $(".container").append($tweet);
+      $(".tweets").prepend($tweet);
       // });
     }
   };
@@ -74,15 +74,23 @@ $(document).ready(function() {
 
   $("form").submit(function(event) {
     let data = $(this).serialize();
+    let textArea = $("#textArea").val().length;
     event.preventDefault();
-    $.ajax({
-      type: "POST",
-      url: "/tweets/",
-      data: data
-    }).then(res => console.log(res));
+    if (textArea < 1 || textArea === null) {
+      alert("Too Short");
+    }
+    if (textArea > 140) {
+      alert("Too Long");
+    } else {
+      $.ajax({
+        type: "POST",
+        url: "/tweets/",
+        data: data
+      }).then(res => console.log(res));
+    }
   });
 
-  // Function to load tweets
+  // Function to load tweets, if text is empty, null or more than 140 characters
   const loadTweets = function() {
     $.ajax({
       type: "GET",
