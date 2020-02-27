@@ -52,7 +52,9 @@ $(document).ready(function() {
   };
 
   $("#compose").click(function() {
-    $(".new-tweet").slideToggle(500);
+    $(".new-tweet")
+      .slideToggle(500)
+      .focus();
   });
 
   //function below uses jQuery to add the article and database information to the HTML doc, do not use id
