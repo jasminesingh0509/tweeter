@@ -23,6 +23,14 @@
   display: none;
 }
 
-#compose {
-  font-family: Source Sans Pro;
+.error {
+  border: solid;
+  margin-top: 5%;
+  padding: 3%;
+  display: none;
+  color: white;
+  background-color: #f44336;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }

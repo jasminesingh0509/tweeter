@@ -87,14 +87,23 @@ $(document).ready(function() {
   //POST============================================================
   //if text is empty, null or more than 140 characters
   $("form").submit(function(event) {
+    $(".error").slideUp(300);
     let data = $(this).serialize();
     let textArea = $("#textArea").val().length;
     event.preventDefault();
     if (textArea < 1 || textArea === null) {
-      alert("Too Short");
+      $(".error")
+        .text(
+          " !!! ERROR: Life is short, and so is your post. Add more text to proceed. "
+        )
+        .slideDown(300);
     }
     if (textArea > 140) {
-      alert("Too Long");
+      $(".error")
+        .text(
+          " !!! ERROR: Are you writing a novel? Max character length is 140."
+        )
+        .slideDown(300);
     } else {
       $.ajax({
         type: "POST",
