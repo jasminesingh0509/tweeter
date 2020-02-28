@@ -35,3 +35,11 @@ footer {
   padding: 0px 15px;
   height: 30px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .tweetContainer {
+    float: right;
+    width: 60%;
+    margin-top: 0.2em;
+  }
+}

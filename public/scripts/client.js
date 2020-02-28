@@ -1,43 +1,6 @@
-// // DATABASE=========================================================
-// const data = [
-//   {
-//     user: {
-//       name: "Newton",
-//       avatars: "https://i.imgur.com/73hZDYK.png",
-//       handle: "@SirIsaac"
-//     },
-//     content: {
-//       text:
-//         "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     created_at: 1461116232227
-//   },
-//   {
-//     user: {
-//       name: "Descartes",
-//       avatars: "https://i.imgur.com/nlhLi3I.png",
-//       handle: "@rd"
-//     },
-//     content: {
-//       text: "Je pense , donc je suis"
-//     },
-//     created_at: 1461113959088
-//   }
-// ];
-
-// const tweetData = {
-//   user: {
-//     name: "Newton",
-//     avatars: "https://i.imgur.com/73hZDYK.png",
-//     handle: "@SirIsaac"
-//   },
-//   content: {
-//     text: "If I have seen further it is by standing on the shoulders of giants"
-//   },
-//   created_at: 1461116232227
-// };
-
 //FUNCTIONS========================================================
+//All functions are wrapped in the jQuerry doc ready function
+
 $(document).ready(function() {
   const renderTweets = function(tweets) {
     // loops through tweets
@@ -47,10 +10,10 @@ $(document).ready(function() {
     for (let tweet of tweets) {
       let $tweet = createTweetElement(tweet);
       $(".tweets").prepend($tweet);
-      // });
     }
   };
 
+  //Set Toggle
   $("#compose").click(function() {
     $(".new-tweet")
       .slideToggle(500)
@@ -79,16 +42,15 @@ $(document).ready(function() {
     return $tweet;
   };
 
+  //Cross-Site Scripting
   const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
 
-  // renderTweets(data);
-
   //POST============================================================
-  //if text is empty, null or more than 140 characters
+  //if text is empty, null or more than 140 characters produce the errors bellow, if not post the tweet
   $("form").submit(function(event) {
     $(".error").slideUp(300);
     let data = $(this).serialize();

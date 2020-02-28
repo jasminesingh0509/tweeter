@@ -2,13 +2,20 @@
   height: 400px;
   width: 100%;
   padding: 1.5em;
-  flex-direction:column;
+  flex-direction: column;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  background-color: #fffdd0;
+  background-color: darksalmon;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  margin-top: 120px;
-  }
+  margin-top: 120px
+}
 
+@media only screen and (min-width: 1024px) {
+  #header {
+    width: 33.3%;
+    float: left;
+    margin-top: 0;
+    margin-left: 2em;
+  }
+}

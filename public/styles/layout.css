@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -22,7 +25,6 @@ body {
   width: 100%;
 }
 
-
 main {
   width: 90%;
   background-color: #f4f1ec;
@@ -32,3 +34,10 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    position: relative;
+    margin-bottom: 8em
+  }
+}

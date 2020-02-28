@@ -4,7 +4,12 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <!-- External CSS -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -49,7 +54,6 @@
       src="/scripts/composer-char-counter.js"
     ></script>
   </head>
-
   <body>
     <!-- Top nav bar (fixed) -->
     <nav class="navbar" id="logo">
@@ -58,22 +62,19 @@
         ><b>Write</b> a new tweet <i class="fas fa-hand-point-down bounce"></i
       ></span>
     </nav>
-
     <header id="header">
       <div>
-        <img src="/images/profile-hex.png" />
+        <img src="/images/circle-cropped.png" />
       </div>
       <br />
       <div>
-        <h2>Your Name</h2>
+        <h2>Jasmine Singh</h2>
       </div>
     </header>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet" data-limit="140">
-        <div class="error" <i class="fas fa-exclamation-triangle"></i>></div>
-        <h2>Compose Tweet</h2>
+        <div class="error"></div>
         <form
           Content-Type="application/x-www-form-urlencoded"
           method="POST"
@@ -90,19 +91,6 @@
         </form>
       </section>
       <div class="tweets"></div>
-      <!-- <article class="tweetContainer">
-      <header>
-        <div>
-          <img src="https://i.imgur.com/73hZDYK.png">
-          <p>Newton</p>
-        </div>
-        <span class="handle">@SirIsaac</span>
-      </header>
-      <textarea id="textArea" name="text" placeholder="If I see further it is by standing on the shoulders of giants"></textarea>
-      <footer>
-        <div>Date</div>
-      </footer>
-  </article> -->
     </main>
   </body>
 </html>

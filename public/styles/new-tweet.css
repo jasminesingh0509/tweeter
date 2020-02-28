@@ -21,6 +21,7 @@
 
 .new-tweet {
   display: none;
+  margin-top: 0.7em;
 }
 
 .error {
@@ -33,4 +34,19 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .new-tweet {
+    float: right;
+    width: 60%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .error {
+    margin-top: 0em;
+    margin-bottom: inherit
+  }
 }
