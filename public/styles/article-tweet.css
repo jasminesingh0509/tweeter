@@ -28,6 +28,14 @@ article:hover {
   opacity: 1;
 }
 
+.icon {
+  opacity: 0;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -41,5 +49,9 @@ footer {
     float: right;
     width: 60%;
     margin-top: 0.2em;
+  }
+
+  article {
+    margin-bottom: 8px;
   }
 }

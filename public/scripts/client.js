@@ -33,7 +33,7 @@ $(document).ready(function() {
   <div class="textAreaTweet">${tweet.content.text}</div>
   <footer>
     <div>${moment(tweet["created_at"]).fromNow()}</div>
-    <div><i class="fas fa-flag"></i>
+    <div class="icon"><i class="fas fa-flag"></i>
     <i class="fas fa-retweet"></i>
     <i class="fas fa-heart"></i></div>
   </footer>
