@@ -15,3 +15,15 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body-parser
+- Chance
+- Md5
+- Moment
+
+## Versioning
+
+1.0.0
+
+## Authors
+
+Jasmine Singh - Lighthouse Labs, 2020
